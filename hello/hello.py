@@ -6,7 +6,7 @@
 #     for i in range(1, limit + 1):
 #         table.append(f"{number} x {i} = {number * i}")
 #     return table
-
+d
 # # Streamlit app with CSS
 # def main():
 #     st.title("Multiplication Table Generator")
