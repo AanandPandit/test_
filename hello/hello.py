@@ -39,8 +39,8 @@ def main():
     number = st.number_input("Enter a number:", min_value=1, value=1)
     limit = st.number_input("Enter limit:", min_value=1, value=10)
 
-    # Generate button
-    if st.button("Generate Table", class="generate-btn"):
+    # Generate button with class attribute
+    if st.button("Generate Table", key="generate_btn", help="Click to generate table",):
         # Calculate table
         table = multiplication_table(number, int(limit))
 
@@ -48,6 +48,7 @@ def main():
         st.markdown("### Multiplication Table")
         for row in table:
             st.write(row)
+
 
 if __name__ == "__main__":
     main()
