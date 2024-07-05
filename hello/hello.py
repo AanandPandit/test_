@@ -50,6 +50,7 @@ css = """
     .result {
         font-size: 1.1em;
         color: #34495e;
+        margin-bottom: 5px;
     }
 </style>
 """
@@ -67,7 +68,7 @@ def main():
     # Input container
     st.markdown('<div class="input-container">', unsafe_allow_html=True)
     st.markdown('<label class="input-label">Enter a number:</label>', unsafe_allow_html=True)
-    number = st.number_input('', min_value=1, max_value=100, step=1)
+    number = st.number_input('', min_value=1, max_value=100, step=1, format="%d")
     
     # Button to generate table
     if st.button('Generate Table', class_='btn'):
